@@ -81,22 +81,22 @@ public class MainExemplo {
 			case 3: {
 				Loja loja = new Loja();
 
-				System.out.println("Informe a quantidade de calÃ§as que vocÃª quer comprar: ");
+				System.out.println("Informe a quantidade de calcas que voce quer comprar: ");
 				loja.calca = leitura.nextLine();
-				System.out.println("Informe a quantidade de camisas que vocÃª quer comprar: ");
+				System.out.println("Informe a quantidade de camisas que voce quer comprar: ");
 				loja.camisa = leitura.nextLine();
-				System.out.println("informe a quantidade de casacos que vocÃª quer comprar: ");
+				System.out.println("informe a quantidade de casacos que voce quer comprar: ");
 				loja.casaco = leitura.nextLine();
 
-				loja.quantidadecalca = loja.quantidadecalca * 99;
-				loja.quantidadecamisa = loja.quantidadecamisa * 69;
-				loja.quantidadecasaco = loja.quantidadecasaco * 169;
+				loja.quantidadecalca = Integer.valueOf(loja.calca) * 99;
+				loja.quantidadecamisa = Integer.valueOf(loja.camisa) * 69;
+				loja.quantidadecasaco = Integer.valueOf(loja.casaco) * 169;
 
-				System.out.println("Preço total das CalÃ§as: " + loja.quantidadecalca);
+				System.out.println("Preço total das Calcas: " + loja.quantidadecalca);
 				System.out.println("Preço toral das Camisas: " + loja.quantidadecamisa);
 				System.out.println("Preço toral das Casacos: " + loja.quantidadecasaco);
 
-				loja.total = loja.quantidadecalca + loja.quantidadecamisa+ loja.quantidadecasaco;
+				loja.total = loja.quantidadecalca + loja.quantidadecamisa + loja.quantidadecasaco;
 
 				System.out.println("O total da compra é: " + loja.total);
 
